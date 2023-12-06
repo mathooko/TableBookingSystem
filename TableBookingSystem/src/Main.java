@@ -177,7 +177,7 @@ public class Main {
 
         } while (wantToAdd != 1 && wantToAdd != 0);
 
-        // getPaymentAndCalculateBalance();
+        getPaymentAndCalculateBalance();
 
     }
 
@@ -190,7 +190,7 @@ public class Main {
             if (paymentAmount < totalPrice) {
                 System.out.println("Payment amount is less than total Price by: " + (paymentAmount - totalPrice));
             } else {
-                System.out.println("Thank you :( . Your Balance is :  " + (totalPrice - paymentAmount));
+                System.out.println("Thank you :( . Your Balance is :  " + (paymentAmount -totalPrice));
             }
         } while (paymentAmount < totalPrice);
     }
